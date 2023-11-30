@@ -1,0 +1,14 @@
+{% extends 'parent.html' %}
+
+{% block title %} Index {% endblock %}
+
+{% block link %} {% endblock %}
+
+{% block style %} {% endblock %}
+
+{% block content %}
+    <center style="margin-top:200px;">
+    <a class="btn btn-primary" href="{{url_for('get_random_cafe')}}" role="button">Random Cafe</a>
+    <a class="btn btn-primary" href="{{url_for('get_all_cafes')}}" role="button">All Cafes</a>
+    </center>
+{% endblock %}
