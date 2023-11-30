@@ -42,6 +42,10 @@ class Cafe(db.Model):
         }
 
 
+with app.app_context():
+    db.create_all()
+
+
 @app.route("/")
 def home():
     return render_template("index.html")
